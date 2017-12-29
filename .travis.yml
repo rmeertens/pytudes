@@ -1,10 +1,15 @@
 language: python
 python:
+  - "2.6"
+  - "2.7"
+  - "3.4"
   - "3.5"
+  - "3.6"
  
 # install jupyter
 install:
     - pip install jupyter
+    - pip install matplotlib
 script:
     - jupyter nbconvert --to notebook --execute ipynb/Cheryl.ipynb
     - jupyter nbconvert --to notebook --execute ipynb/Advent 2017.ipynb
